@@ -1,6 +1,11 @@
 # Getting Started with Create React App
+![alt text](public\img\projectPic.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This is a simple learner managment system.
+
+## Libraries Used
+React Boostrap [https://react-bootstrap.netlify.app/](https://react-bootstrap.netlify.app/)
+
 
 ## Available Scripts
 
