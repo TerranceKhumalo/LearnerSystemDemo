@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-![project List Screen](public\img\projectPic.png)
+![project List Screen](/public/img/projectPic.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This is a simple learner managment system.
 
