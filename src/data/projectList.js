@@ -1,4 +1,4 @@
-let monthNames = ["January", "February", "March", "April", "May", "June",
+const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
 
@@ -23,9 +23,9 @@ const projectList = [
 
 
 function getProjectDate(){
-    let date = new Date();
-    let currentMonth = date.getMonth();
-    return `${date.getDay()} ${monthNames[currentMonth]} ${date.getDate()}`
+    const date = new Date();
+    const currentMonth = date.getMonth();
+    return `${date.getDate()} ${monthNames[currentMonth]} ${date.getFullYear()}`
 }
 
 export default projectList;
