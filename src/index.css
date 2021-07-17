@@ -16,3 +16,20 @@ code {
   border-radius: 10px;
   width: 25%;
 }
+
+.centerBox{
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  margin-top: 15%;
+  /* margin-bottom: 50%; */
+}
+.form-width{
+  padding: 0 700px 0 700px;
+}
+
+.form-btn{
+  width: 100%;
+}

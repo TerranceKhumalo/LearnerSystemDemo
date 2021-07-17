@@ -1,5 +1,8 @@
 import ProjectScreen from "../src/components/projectListScreen/projectScreen";
-import './App.css';
+import "./App.css";
+import AddPorjectScreen from "./components/addIteamScreen/addProject";
+import UpdateScreen from "./components/updateScreen/updateScreen";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -8,7 +11,23 @@ function App() {
       To test your component comment out this ProjectScreen component
       and add your component. Routing will be added later
        */}
-      <ProjectScreen></ProjectScreen>
+      <Router>
+        <Switch>
+
+          <Route path="/add">
+            <AddPorjectScreen />
+          </Route>
+
+          <Route path="/update">
+            <UpdateScreen />
+          </Route>
+
+          <Route path="/">
+            <ProjectScreen />
+          </Route>
+
+        </Switch>
+      </Router>
     </div>
   );
 }
