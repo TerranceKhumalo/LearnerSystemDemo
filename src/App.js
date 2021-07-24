@@ -1,6 +1,8 @@
 import ProjectScreen from "../src/components/projectListScreen/projectScreen";
 import "./App.css";
 import AddPorjectScreen from "./components/addIteamScreen/addProject";
+import ErrorBoundary from "./components/errorScreen/errorSreen";
+
 import UpdateScreen from "./components/updateScreen/updateScreen";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -13,7 +15,6 @@ function App() {
        */}
       <Router>
         <Switch>
-
           <Route path="/add">
             <AddPorjectScreen />
           </Route>
@@ -23,9 +24,10 @@ function App() {
           </Route>
 
           <Route path="/">
-            <ProjectScreen />
+            <ErrorBoundary>
+              <ProjectScreen />
+            </ErrorBoundary>
           </Route>
-
         </Switch>
       </Router>
     </div>
